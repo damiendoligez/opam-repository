@@ -1,7 +1,7 @@
 opam-version: "1"
 maintainer: "contact@ocamlpro.com"
 build: [
-  ["./configure" "-configdir" "%{lib}%/coq/config" "-mandir" man "-docdir" doc "--prefix" prefix "--usecamlp5" "--camlp5dir" "%{lib}%/camlp5" "--coqide" "no"]
+  ["./configure" "-configdir" "%{lib}%/coq/config" "-mandir" man "-docdir" doc "--prefix" prefix "--usecamlp5" "--camlp5dir" "%{lib}%/camlp5" "--coqide" "no" "-with-doc" "no"]
   [make "-j%{jobs}%" "world"]
   [make "-j%{jobs}%" "states"]
   [make "install"]
