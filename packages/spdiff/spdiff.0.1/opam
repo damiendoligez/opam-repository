@@ -7,5 +7,5 @@ build: [
   ["make" "opt"]
 ]
 depends: [
-  "menhir" {< "20141215"}
+  "menhir" {<= "20140422"}
 ]
