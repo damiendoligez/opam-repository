@@ -9,3 +9,4 @@ build: [
   [make "install"]
 ]
 ocaml-version: [< "4.03.0"]
+patches: ["camlp5+4.02.2.diff"]
