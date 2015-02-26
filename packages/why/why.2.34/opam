@@ -44,3 +44,6 @@ depexts: [
   [["debian"] ["autoconf"]]
   [["ubuntu"] ["autoconf"]]
 ]
+patches: [
+  "why-suppress-fatal-warnings.diff"
+]
