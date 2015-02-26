@@ -1397,7 +1397,7 @@ diff -r -u -N camlp5-6.12.orig/ocaml_stuff/4.02.2/parsing/.gitignore ocaml_stuff
 diff -r -u -N camlp5-6.12.orig/ocaml_stuff/4.02.2/parsing/location.mli ocaml_stuff/4.02.2/parsing/location.mli
 --- camlp5-6.12.orig/ocaml_stuff/4.02.2/parsing/location.mli	1969-12-31 19:00:00.000000000 -0500
 +++ ocaml_stuff/4.02.2/parsing/location.mli	2015-02-20 18:29:35.842625980 -0500
-@@ -0,0 +1,119 @@
+@@ -0,0 +1,120 @@
 +(***********************************************************************)
 +(*                                                                     *)
 +(*                                OCaml                                *)
@@ -1452,6 +1452,7 @@ diff -r -u -N camlp5-6.12.orig/ocaml_stuff/4.02.2/parsing/location.mli ocaml_stu
 +val print_error: formatter -> t -> unit
 +val print_error_cur_file: formatter -> unit
 +val print_warning: t -> formatter -> Warnings.t -> unit
++val formatter_for_warnings : formatter ref
 +val prerr_warning: t -> Warnings.t -> unit
 +val echo_eof: unit -> unit
 +val reset: unit -> unit
