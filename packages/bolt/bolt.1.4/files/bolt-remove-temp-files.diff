@@ -1,0 +1,12 @@
+diff -r -u bolt-1.4.orig/myocamlbuild.ml bolt-1.4/myocamlbuild.ml
+--- bolt-1.4.orig/myocamlbuild.ml	2012-10-26 15:19:41.000000000 -0400
++++ bolt-1.4/myocamlbuild.ml	2015-02-27 18:06:55.011585130 -0500
+@@ -64,7 +64,7 @@
+     let dir = Pathname.dirname dst in
+     let cmd = Printf.sprintf "mkdir -p %s" (Pathname.to_string dir) in
+     if Sys.command cmd <> 0 then failwith ("cannot run " ^ cmd);
+-    cp src dst in
++    mv src dst in
+   dispatch begin function
+     | After_rules ->
+         let camlp4of =
