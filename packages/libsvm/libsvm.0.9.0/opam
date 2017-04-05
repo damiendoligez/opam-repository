@@ -17,3 +17,7 @@ depends: [
   "ocamlbuild" {build}
 ]
 install: ["ocaml" "setup.ml" "-install"]
+depexts: [
+  [["ubuntu"]["libsvm-dev"]]
+  [["debian"]["libsvm-dev"]]
+]
