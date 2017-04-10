@@ -15,5 +15,5 @@ build: [
 install: [make "install" "PREFIX=%{prefix}%"]
 remove: [make "remove" "PREFIX=%{prefix}%"]
 depends: ["ocamlfind" "core" "async" "async_shell" "async_unix" "async_extra"
-          "sexplib" "async_shell" "core_extended" "async_find"]
+          "sexplib" {< "113.24.00"} "async_shell" "core_extended" "async_find"]
 
