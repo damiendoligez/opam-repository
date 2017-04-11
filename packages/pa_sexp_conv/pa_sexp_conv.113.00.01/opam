@@ -14,6 +14,6 @@ depends: [
   "ocamlfind"
   "ocamlbuild" {build}
   "camlp4"
-  "type_conv"
+  "type_conv"  {>= "113.00.00"}
 ]
 available: [ ocaml-version >= "4.02.1" & ocaml-version < "4.03" ]
