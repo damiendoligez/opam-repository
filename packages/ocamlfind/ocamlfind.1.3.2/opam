@@ -18,6 +18,7 @@ build: [
 ]
 depends: [
   "conf-m4"
+  "camlp4"
 ]
 available: ocaml-version > "3.12.2"
 install: [make "install"]
