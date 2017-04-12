@@ -35,6 +35,7 @@ depends: [
 depopts: [ "sequence" "base-bigarray" "base-unix" "base-threads" "qtest" { test } ]
 conflicts: [
   "sequence" {< "0.5"}
+  "sequence" {>= "0.9"}
   "qtest" {< "2.2"}
   "qcheck"
 ]

@@ -30,6 +30,7 @@ depends: [
   "ocamlbuild" {build}
 ]
 depopts: [ "lwt" "sequence" "base-bigarray" ]
+conflicts: [ "sequence" {>= "0.9"} ]
 tags: [ "stdlib" "containers" "iterators" "list" "heap" "queue" ]
 homepage: "https://github.com/c-cube/ocaml-containers/"
 doc: "http://cedeela.fr/~simon/software/containers/"
