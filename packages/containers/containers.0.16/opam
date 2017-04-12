@@ -34,5 +34,8 @@ depends: [
   "ocamlbuild" {build}
 ]
 depopts: ["sequence" "base-bigarray" "base-unix" "base-threads"]
-conflicts: [ "sequence" {>= "0.9"} ]
+conflicts: [
+  "sequence" {< "0.5.1"}
+  "sequence" {>= "0.9"}
+]
 available: [ocaml-version >= "4.00.0"]
