@@ -14,9 +14,10 @@ depends: [
   "batteries"
   "cryptokit"
   "leveldb"
-  "extprot"
+  "extprot" {< "1.2.0"}
   "lwt" {< "2.4.7"}
   "omake"
+  "ounit"
 ]
 patches: [ "obigstore-unset-warn-error.diff" ]
 dev-repo: "git://github.com/mfp/obigstore"
