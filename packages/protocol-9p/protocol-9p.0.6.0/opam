@@ -21,7 +21,7 @@ depends: [
   "sexplib" {> "113.00.00"}
   "result"
   "mirage-types-lwt" {< "3.0.0"}
-  "lwt" {>= "2.4.7"}
+  "lwt" {>= "2.4.7" & < "3.0.0"}
   "base-unix"
   "cmdliner"
   "stringext"
@@ -33,6 +33,7 @@ depends: [
   "ocamlbuild" {build}
   "ppx_tools" {build}
   "alcotest" {test & >= "0.4.0"}
+  "ppx_cstruct"
 ]
 depopts: ["lambda-term"]
 available: [ocaml-version >= "4.02.0"]

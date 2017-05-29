@@ -34,7 +34,8 @@ depends: [
   "ocamlfind"        {build}
   "ocamlbuild"       {build}
   "topkg"            {build & >= "0.8.0"}
-  "ppx_tools"        {build}
+  "ppx_cstruct"      {build}
+  "ppx_deriving"     {build}
   "base-bytes"
   "cstruct"          {>= "2.0.0"}
   "re"
@@ -72,5 +73,6 @@ conflicts: [
   "mirage-types-lwt" {< "3.0.0"}
   "async" {<"112.24.00"}
   "lwt" {< "2.4.7"}
+  "lwt" {>= "3.0.0"}
 ]
 available: [ocaml-version >= "4.03.0"]

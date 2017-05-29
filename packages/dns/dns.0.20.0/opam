@@ -37,6 +37,7 @@ depends: [
   "ppx_tools"        {build}
   "base-bytes"
   "cstruct"          {>= "2.0.0"}
+  "ppx_cstruct"
   "re"
   "ipaddr"           {>= "2.6.0"}
   "uri"              {>= "1.7.0"}
@@ -70,5 +71,6 @@ conflicts: [
   "mirage-types-lwt" {< "3.0.0"}
   "async" {<"112.24.00"}
   "lwt" {< "2.4.7"}
+  "lwt" {>= "3.0.0"}
 ]
 available: [ocaml-version >= "4.03.0"]
