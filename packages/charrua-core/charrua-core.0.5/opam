@@ -28,10 +28,10 @@ depends: [
   "ppx_tools"     {build}
   "menhir"        {build}
   "cstruct"       {>="1.9.0" & <"3.0.0"}
-  "ppx_cstruct"
+  "ppx_cstruct"   {build}
   "sexplib"
   "ipaddr"        {>= "2.5.0"}
-  "tcpip"         {>= "3.1.0"}
+  "tcpip"         {>= "3.1.0" & <"3.2.0"}
   "rresult"
   "io-page"       {test}
 ]
